@@ -1,0 +1,211 @@
+/*TODO: font-size:16px recomendado rem*/
+/*TODO: Desing Mobile First*/
+/*TODO: relativas % vw-vh rem(recomendado)-em*/ 
+
+/*FIXME: checar el texto del titulo de la card que quede bien*/
+/*FIXME: Checar el titulo y el section manejarlo en cajas*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header_title_container{ 
+    margin: 68px 30px 38px 12px;
+}
+
+.header_text{
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+.section_container{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 30px 0px 12px;
+}
+
+.section_title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.13rem;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.section_text{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.89rem;
+    line-height: 21px;
+}
+
+.footer_container{
+    margin: 50px 0px 20px 0px;
+}
+
+.footer_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    font-style: normal;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+.main_content{
+    height: 990px;
+    /* background-color: aqua; */
+}
+
+.div_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+    /* background-color: yellow; */
+}
+
+.div_item{
+    /* background-color: red; */
+    width: 45%;
+    height: 263px;
+    margin: 28px 5px 5px 5px;
+    padding-bottom: 10px;
+    display: flex;
+    position: relative;
+}
+
+.img{
+    /* background-color: black; */
+    width: 85%;
+    height: 204px;
+    position: absolute;
+}
+
+img{
+    width: 100%;
+    height: 204px;
+}
+
+.text_title{
+    transform: rotate(90deg) translateX(90px) translateY( 0px );
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.65rem;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.text_body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.div_item:nth-child(n+3){
+    margin: 38px 5px 5px 5px;
+}
+
+.div_item:nth-child(2n)>.img{
+    /* background-color: blue; */
+    align-self: flex-end;
+}
+
+@media (min-width: 500px){
+
+    .header_container{
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header_div{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .header_title_container{ 
+        width: 40%;
+        margin: 68px 0px  38px 0px;
+    }
+    
+    .section_container{
+        font-family: 'Poppins', sans-serif;
+        width: 48%;
+        margin: 68px 0px 38px 0px;
+    }
+   
+    .main_content{
+        height: 820px;
+    }
+
+    .div_item{
+        width: 28%;
+        height: 320px;
+    }
+
+    img{
+        height: 270px;
+    }
+
+    .div_container{
+        width: 90.5%;
+        margin: 0px auto;
+        justify-content: space-around;
+    }
+
+    .div_item:nth-child(4)>.img{
+        align-self: flex-start;
+    }
+
+    .div_item:nth-child(5)>.img{
+        align-self: flex-end;
+    }
+
+    .div_item:nth-child(6)>.img{
+        align-self: flex-start;
+    }
+
+
+} 
+
+@media (min-width: 750px){
+    .main_content{
+        height: 850px;
+    }
+
+    .header_div{
+        width: 90.5%;
+    }
+    
+    .div_container{
+        width: 72.5%;
+        justify-content: space-around;
+    }
+
+    .text_title{
+        font-size: 0.75rem;
+        line-height: 16px;
+    }
+
+    .text_body, .section_text{
+        font-size: 1.15rem;
+        line-height: 27px;
+    }
+
+}
