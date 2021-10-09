@@ -1,13 +1,7 @@
-/*TODO: font-size:16px recomendado rem*/
-/*TODO: Desing Mobile First*/
-/*TODO: relativas % vw-vh rem(recomendado)-em*/ 
-
-/*FIXME: checar el texto del titulo de la card que quede bien*/
-/*FIXME: Checar el titulo y el section manejarlo en cajas*/ 
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -63,7 +57,6 @@
 
 .main_content{
     height: 990px;
-    /* background-color: aqua; */
 }
 
 .div_container{
@@ -71,24 +64,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0px 5px;
-    /* background-color: yellow; */
 }
 
 .div_item{
-    /* background-color: red; */
     width: 45%;
     height: 263px;
     margin: 28px 5px 5px 5px;
     padding-bottom: 10px;
     display: flex;
-    position: relative;
 }
 
 .img{
-    /* background-color: black; */
+    background-color: black;
     width: 85%;
     height: 204px;
-    position: absolute;
+    position: relative;
 }
 
 img{
@@ -97,13 +87,20 @@ img{
 }
 
 .text_title{
-    transform: rotate(90deg) translateX(90px) translateY( 0px );
     font-family: 'PT Serif', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 0.65rem;
     line-height: 13px;
     text-transform: uppercase;
+
+    position: absolute;
+    transform: rotate(90deg);
+    top: 42px;
+    left: 74%;
+
+    width: 102px;
+    height: 16px;
 }
 
 .text_body{
@@ -120,11 +117,19 @@ img{
 }
 
 .div_item:nth-child(2n)>.img{
-    /* background-color: blue; */
     align-self: flex-end;
 }
 
+@media (min-width: 460px){
+    .text_title{
+        left: 79%;
+    }
+}
+
 @media (min-width: 500px){
+    .text_title{
+        left: 73%;
+    }
 
     .header_container{
         width: 90%;
@@ -145,7 +150,6 @@ img{
     }
     
     .section_container{
-        font-family: 'Poppins', sans-serif;
         width: 48%;
         margin: 68px 0px 38px 0px;
     }
@@ -184,7 +188,11 @@ img{
 
 } 
 
-@media (min-width: 750px){
+@media (min-width: 740px){
+    .text_title{
+        left: 84%;
+    }
+
     .main_content{
         height: 850px;
     }
