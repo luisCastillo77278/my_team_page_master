@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://luiscastillo77278.github.io/my_team_page_master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/luisCastillo77278/my_team_page_master">
       Solution
     </a>
     <span> | </span>
@@ -27,7 +27,6 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -40,18 +39,11 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- Mi demo lo puedes encontrar en [GitHub Pages My_team_page_master](https://luiscastillo77278.github.io/my_team_page_master/)
+- La experiencia que obtuve al realizar este desafío fue la implementación de un diseño respinsive con metodología mobile firs y añadiendo posicionamiento de elementos.
+- He mejorado en la cuestión de irme adaptando a crear diseños con CSS nativo.
+- Es mejor empezar a diseñar desde el modelo movile firs, desde dispositivos móviles hasta dispositivos desktop. Ya que se tiene un mejor control con los media query.
 
-### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
@@ -70,6 +62,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Facebook [Luis Castillo](https://www.facebook.com/yo.Anonim0/)
+- GitHub [luisCastillo77278](https://github.com/luisCastillo77278)
